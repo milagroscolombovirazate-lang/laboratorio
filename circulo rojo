@@ -1,0 +1,25 @@
+float radio;
+float xc,yc;
+void setup(){
+  size(800,400);
+  radio=ramdom(100,400);
+  xc=ramdom(width);
+  xc=ramdom(height);
+}
+void draw(){ 
+  if(tocaC(xc,yc,radio)){
+  fill(255,0,0);}
+  else{
+  fill(255);}
+circule(xc,yc,radio*2);
+
+}
+boolean tocaC(float x,float y,float r){
+float d=dist(mouseX,mouseY,x,y);
+if(d<r){
+return true;
+}
+else{
+return false;
+}
+}
