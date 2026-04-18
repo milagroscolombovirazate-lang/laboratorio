@@ -1,17 +1,16 @@
 int radio=0;
-void setup(){
-  size (800,800);
+dibujarCirculo(25, 40, 60);
+void setup() {
+  size (800, 800);
   background(205);
-
 }
-void draw(){
-  if(mousePressed){
+void draw() {
+  if (mousePressed) {
     radio+=2;
-    dibujarCirculos(mouseX,mouseY,radio);
+    dibujarCirculo(mouseX, mouseY, radio);
   }
+}
 void mouseReleased ()
 {
   radio = 0;
-}
-}
 }
